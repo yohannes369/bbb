@@ -3,76 +3,414 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Support Group</title>
+    <title>Bahir Dar Student Support</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-graduation-cap"></i> BDSS</h2>
+                <button class="sidebar-close" id="sidebar-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="#grades" class="nav-link"><i class="fas fa-book"></i> Grades & Subjects</a></li>
+                    <li><a href="#instructors" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Instructors</a></li>
+                    <li><a href="#progress" class="nav-link"><i class="fas fa-chart-line"></i> Student Progress</a></li>
+                    <li><a href="#students" class="nav-link"><i class="fas fa-users"></i> Student List</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="sidebar-stats">
+                    <h4><i class="fas fa-chart-pie"></i> Quick Stats</h4>
+                    <p><i class="fas fa-user-graduate"></i> 500+ Students</p>
+                    <p><i class="fas fa-book-open"></i> 60+ Subjects</p>
+                    <p><i class="fas fa-star"></i> 95% Success Rate</p>
+                </div>
+                <div class="contact-info">
+                    <h4><i class="fas fa-phone-alt"></i> Contact</h4>
+                    <p>bahirdar.studentsupport@gmail.com</p>
+                    <p>+251 9XX XXX XXX</p>
+                </div>
+            </div>
+        </aside>
 
-    <!-- Header -->
-    <header>
-        <h1>Student Support Group</h1>
-        <p>Helping Students Learn, Grow, and Succeed</p>
-    </header>
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="main-header">
+                <button class="sidebar-toggle" id="sidebar-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="header-content">
+                    <h1>Bahir Dar Student Support</h1>
+                    <p class="tagline">Supporting Students from Grade 1 to Grade 12</p>
+                </div>
+                <div class="header-actions">
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-envelope"></i> Contact Us</a>
+                </div>
+            </header>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#progress">Progress</a>
-        <a href="#contact">Contact</a>
-    </nav>
+            <!-- Page Content -->
+            <div class="content-wrapper">
+                <!-- Home Section -->
+                <section id="home" class="section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-star"></i> Welcome to Bahir Dar Student Support</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="welcome-content">
+                        <div class="welcome-text">
+                            <p>Bahir Dar Student Support provides comprehensive academic assistance for all core subjects: <strong>English, Math, Biology, Chemistry, and Physics</strong>. We are dedicated to helping students from Grade 1 to 12 achieve academic excellence through innovative learning methods.</p>
+                            <div class="features-grid">
+                                <div class="feature">
+                                    <i class="fas fa-book"></i>
+                                    <h4>Guided Short Notes</h4>
+                                    <p>Concise, curriculum-aligned study materials</p>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-robot"></i>
+                                    <h4>AI-Based Quizzes</h4>
+                                    <p>Personalized quizzes with adaptive difficulty</p>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-user-tie"></i>
+                                    <h4>Expert Tutoring</h4>
+                                    <p>One-on-one sessions with qualified instructors</p>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-chart-bar"></i>
+                                    <h4>Progress Tracking</h4>
+                                    <p>Detailed analytics on student performance</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="welcome-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-graduation-cap"></i>
+                                <p>Empowering Students for Success</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h2>Welcome</h2>
-        <p>
-            Our Student Support Group provides academic help, exam preparation,
-            books, and guidance for students from Grade 1 to Grade 12.
-        </p>
-    </section>
+                <!-- About Section -->
+                <section id="about" class="section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-info-circle"></i> About Us</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>We are a team of dedicated teachers and mentors committed to helping students excel academically. Our mission is to provide accessible, high-quality educational support to students in Bahir Dar and surrounding areas.</p>
+                            <div class="mission-vision">
+                                <div class="mission">
+                                    <h4><i class="fas fa-bullseye"></i> Our Mission</h4>
+                                    <p>To empower students with the knowledge, skills, and confidence needed to achieve their academic goals through personalized support and innovative teaching methods.</p>
+                                </div>
+                                <div class="vision">
+                                    <h4><i class="fas fa-eye"></i> Our Vision</h4>
+                                    <p>To become the leading student support center in Ethiopia, recognized for excellence in education and student success.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>
-            We are a group of dedicated teachers and mentors who support students
-            through tutoring, exams, and continuous progress tracking.
-        </p>
-    </section>
+                <!-- Grades Section -->
+                <section id="grades" class="section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-book"></i> Grades & Subjects</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <p class="section-intro">Select a grade to view subjects, study materials, and quizzes:</p>
+                    
+                    <div class="grades-navigation">
+                        <div class="grade-filter">
+                            <button class="filter-btn active" data-filter="all">All Grades</button>
+                            <button class="filter-btn" data-filter="primary">Primary (1-8)</button>
+                            <button class="filter-btn" data-filter="secondary">Secondary (9-12)</button>
+                        </div>
+                        
+                        <div class="grades-grid">
+                            <!-- Grade cards will be generated dynamically -->
+                        </div>
+                    </div>
+                    
+                    <!-- Grade Details (Dynamically shown when grade is selected) -->
+                    <div id="grade-details" class="grade-details">
+                        <div class="details-header">
+                            <h3 id="selected-grade-title">Select a Grade</h3>
+                            <button id="close-details" class="close-details"><i class="fas fa-times"></i></button>
+                        </div>
+                        <div class="details-content">
+                            <p id="grade-description">Click on any grade above to view available subjects and learning materials.</p>
+                            <div class="subjects-list" id="subjects-list">
+                                <!-- Subjects will be dynamically populated -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>📘 Books & Study Materials</li>
-            <li>📝 Exam & Test Preparation</li>
-            <li>👨‍🏫 Tutoring & Mentorship</li>
-            <li>📊 Student Progress Tracking</li>
-        </ul>
-    </section>
+                <!-- Instructors Section -->
+                <section id="instructors" class="section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-chalkboard-teacher"></i> Our Instructors</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <p class="section-intro">Meet our team of dedicated and experienced instructors:</p>
+                    
+                    <div class="instructors-grid">
+                        <div class="instructor-card">
+                            <div class="instructor-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h4>Mr. Abebe T.</h4>
+                            <p class="instructor-subject">English Instructor</p>
+                            <p class="instructor-qualification">MA in English Literature, 10+ years experience</p>
+                            <div class="instructor-contact">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="instructor-card">
+                            <div class="instructor-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h4>Ms. Saba K.</h4>
+                            <p class="instructor-subject">Mathematics Instructor</p>
+                            <p class="instructor-qualification">MSc in Mathematics, 8+ years experience</p>
+                            <div class="instructor-contact">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="instructor-card">
+                            <div class="instructor-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h4>Dr. Alemu G.</h4>
+                            <p class="instructor-subject">Biology Instructor</p>
+                            <p class="instructor-qualification">PhD in Biology, 12+ years experience</p>
+                            <div class="instructor-contact">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="instructor-card">
+                            <div class="instructor-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h4>Mr. Tesfaye D.</h4>
+                            <p class="instructor-subject">Chemistry Instructor</p>
+                            <p class="instructor-qualification">MSc in Chemistry, 9+ years experience</p>
+                            <div class="instructor-contact">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="instructor-card">
+                            <div class="instructor-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h4>Dr. Hana M.</h4>
+                            <p class="instructor-subject">Physics Instructor</p>
+                            <p class="instructor-qualification">PhD in Physics, 15+ years experience</p>
+                            <div class="instructor-contact">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-    <!-- Progress Section -->
-    <section id="progress">
-        <h2>Student Progress</h2>
-        <p>
-            Students can track their grades, attendance, and learning progress
-            with regular feedback and support.
-        </p>
-    </section>
+                <!-- Student Progress Section -->
+                <section id="progress" class="section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-chart-line"></i> Student Progress</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <p class="section-intro">Average scores and progress tracking across all grades:</p>
+                    
+                    <div class="progress-container">
+                        <div class="progress-chart">
+                            <canvas id="progressChart"></canvas>
+                        </div>
+                        
+                        <div class="progress-summary">
+                            <h4><i class="fas fa-trophy"></i> Overall Performance</h4>
+                            <div class="summary-stats">
+                                <div class="stat">
+                                    <h5>Average Score</h5>
+                                    <p class="stat-value">86.4%</p>
+                                </div>
+                                <div class="stat">
+                                    <h5>Improvement Rate</h5>
+                                    <p class="stat-value">12.3%</p>
+                                </div>
+                                <div class="stat">
+                                    <h5>Completion Rate</h5>
+                                    <p class="stat-value">94.7%</p>
+                                </div>
+                            </div>
+                            
+                            <div class="progress-list">
+                                <h5><i class="fas fa-list"></i> Grade-wise Average Scores</h5>
+                                <ul id="grade-progress-list">
+                                    <!-- Will be populated by JavaScript -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: studentsupport@gmail.com</p>
-        <p>Phone: +251 9XX XXX XXX</p>
-        <p>Location: Bahir Dar, Ethiopia</p>
-    </section>
+                <!-- Student List Section -->
+                <section id="students" class="section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-users"></i> Student List</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <p class="section-intro">Our current student roster (sample data):</p>
+                    
+                    <div class="table-container">
+                        <table class="student-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Grade</th>
+                                    <th>Phone</th>
+                                    <th>Progress</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="student-table-body">
+                                <!-- Will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="table-actions">
+                        <button class="btn btn-secondary" id="load-more-students">
+                            <i class="fas fa-plus"></i> Load More Students
+                        </button>
+                        <div class="student-count">
+                            <p>Showing <span id="shown-count">10</span> of <span id="total-count">500+</span> students</p>
+                        </div>
+                    </div>
+                </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Student Support Group. All Rights Reserved.</p>
-    </footer>
+                <!-- Contact Section -->
+                <section id="contact" class="section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    
+                    <div class="contact-container">
+                        <div class="contact-info">
+                            <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
+                            <p>Bahir Dar, Ethiopia</p>
+                            
+                            <h4><i class="fas fa-envelope"></i> Email</h4>
+                            <p>bahirdar.studentsupport@gmail.com</p>
+                            
+                            <h4><i class="fas fa-phone"></i> Phone</h4>
+                            <p>+251 9XX XXX XXX</p>
+                            
+                            <h4><i class="fas fa-clock"></i> Office Hours</h4>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                            <p>Saturday: 9:00 AM - 2:00 PM</p>
+                        </div>
+                        
+                        <div class="contact-form">
+                            <h4>Send us a Message</h4>
+                            <form id="contact-form">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <select required>
+                                        <option value="" disabled selected>Select Grade</option>
+                                        <option value="grade1">Grade 1</option>
+                                        <option value="grade2">Grade 2</option>
+                                        <option value="grade3">Grade 3</option>
+                                        <option value="grade4">Grade 4</option>
+                                        <option value="grade5">Grade 5</option>
+                                        <option value="grade6">Grade 6</option>
+                                        <option value="grade7">Grade 7</option>
+                                        <option value="grade8">Grade 8</option>
+                                        <option value="grade9">Grade 9</option>
+                                        <option value="grade10">Grade 10</option>
+                                        <option value="grade11">Grade 11</option>
+                                        <option value="grade12">Grade 12</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
 
+                <!-- Footer -->
+                <footer class="main-footer">
+                    <div class="footer-content">
+                        <div class="footer-logo">
+                            <h3><i class="fas fa-graduation-cap"></i> Bahir Dar Student Support</h3>
+                            <p>Empowering students for academic excellence since 2020</p>
+                        </div>
+                        
+                        <div class="footer-links">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#grades">Grades</a></li>
+                                <li><a href="#instructors">Instructors</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-social">
+                            <h4>Follow Us</h4>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-telegram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-bottom">
+                        <p>© 2026 Bahir Dar Student Support. All Rights Reserved.</p>
+                        <p>Designed with <i class="fas fa-heart"></i> for Ethiopian students</p>
+                    </div>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
