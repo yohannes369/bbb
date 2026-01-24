@@ -1,416 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="am">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bahir Dar Student Support</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ባሕርዳር የተማሪዎች ድጋፍ አገልግሎት</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Sidebar Navigation -->
-        <aside class="sidebar" id="sidebar">
-            <div class="sidebar-header">
-                <h2><i class="fas fa-graduation-cap"></i> BDSS</h2>
-                <button class="sidebar-close" id="sidebar-close">
-                    <i class="fas fa-times"></i>
-                </button>
+    <!-- Header and Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <h1>ባሕርዳር የተማሪዎች ድጋፍ</h1>
             </div>
-            
-            <nav class="sidebar-nav">
+            <nav class="nav-desktop">
                 <ul>
-                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
-                    <li><a href="#grades" class="nav-link"><i class="fas fa-book"></i> Grades & Subjects</a></li>
-                    <li><a href="#instructors" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Instructors</a></li>
-                    <li><a href="#progress" class="nav-link"><i class="fas fa-chart-line"></i> Student Progress</a></li>
-                    <li><a href="#students" class="nav-link"><i class="fas fa-users"></i> Student List</a></li>
-                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="#home" class="nav-link active">መግቢያ</a></li>
+                    <li><a href="#about" class="nav-link">ስለ እኛ</a></li>
+                    <li><a href="#teachers" class="nav-link">መምህራን</a></li>
+                    <li><a href="#courses" class="nav-link">ኮርሶች</a></li>
+                    <li><a href="#students" class="nav-link">ተማሪ ማስተዳደሪያ</a></li>
+                    <li><a href="#materials" class="nav-link">የትምህርት ቁሳቁሶች</a></li>
                 </ul>
             </nav>
-            
-            <div class="sidebar-footer">
-                <div class="sidebar-stats">
-                    <h4><i class="fas fa-chart-pie"></i> Quick Stats</h4>
-                    <p><i class="fas fa-user-graduate"></i> 500+ Students</p>
-                    <p><i class="fas fa-book-open"></i> 60+ Subjects</p>
-                    <p><i class="fas fa-star"></i> 95% Success Rate</p>
-                </div>
-                <div class="contact-info">
-                    <h4><i class="fas fa-phone-alt"></i> Contact</h4>
-                    <p>bahirdar.studentsupport@gmail.com</p>
-                    <p>+251 9XX XXX XXX</p>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation (Mobile) -->
+    <aside class="sidebar" id="sidebar">
+        <button class="close-sidebar" id="closeSidebar">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="sidebar-logo">
+            <h2>ባሕርዳር የተማሪዎች ድጋፍ</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#home" class="sidebar-link active"><i class="fas fa-home"></i> መግቢያ</a></li>
+                <li><a href="#about" class="sidebar-link"><i class="fas fa-info-circle"></i> ስለ እኛ</a></li>
+                <li><a href="#teachers" class="sidebar-link"><i class="fas fa-chalkboard-teacher"></i> መምህራን</a></li>
+                <li><a href="#courses" class="sidebar-link"><i class="fas fa-book"></i> ኮርሶች</a></li>
+                <li><a href="#students" class="sidebar-link"><i class="fas fa-user-graduate"></i> ተማሪ ማስተዳደሪያ</a></li>
+                <li><a href="#materials" class="sidebar-link"><i class="fas fa-file-alt"></i> የትምህርት ቁሳቁሶች</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section home-section">
+            <div class="container">
+                <div class="hero">
+                    <h2>ባሕርዳር የተማሪዎች ድጋፍ አገልግሎት</h2>
+                    <p class="welcome-text">እንኳን ወደ ባሕርዳር የተማሪዎች ድጋፍ አገልግሎት በደህና መጡ! እኛ የመማር ሂደትዎን ለማገዝ እና አስተማሮትዎን ለማሻሻል እዚህ አለን።</p>
+                    <p>ከ1ኛ ክፍል እስከ 12ኛ ክፍል ድረስ ለሁሉም ደረጃዎች የትምህርት ድጋፍ፣ ፈተናዎች፣ እስከማር ሙከራዎች እና መመሪያዎችን እናቀርባለን።</p>
+                    <a href="#materials" class="btn primary-btn">የትምህርት ቁሳቁሶችን ይመልከቱ</a>
                 </div>
             </div>
-        </aside>
+        </section>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Top Header -->
-            <header class="main-header">
-                <button class="sidebar-toggle" id="sidebar-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="header-content">
-                    <h1>Bahir Dar Student Support</h1>
-                    <p class="tagline">Supporting Students from Grade 1 to Grade 12</p>
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">ስለ እኛ</h2>
+                <div class="about-content">
+                    <p>ባሕርዳር የተማሪዎች ድጋፍ አገልግሎት ከ1ኛ ክፍል እስከ 12ኛ ክፍል ድረስ ላሉ ተማሪዎች የትምህርት ድጋፍ አገልግሎት የሚሰጥ መድረክ ነው።</p>
+                    <div class="features">
+                        <div class="feature-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>የመማር ድጋፍ</h3>
+                            <p>ለሁሉም የትምህርት ደረጃዎች የሚስማሙ የመማር ቁሳቁሶች</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-clipboard-check"></i>
+                            <h3>ፈተናዎች እና እስከማር ሙከራዎች</h3>
+                            <p>የተለያዩ የፈተና አይነቶች እና ሙከራዎች</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <h3>መምህራን መመሪያ</h3>
+                            <p>በተለያዩ የትምህርት ዘርፎች ያሉ የሙያ መምህራን</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="header-actions">
-                    <a href="#contact" class="btn btn-primary"><i class="fas fa-envelope"></i> Contact Us</a>
-                </div>
-            </header>
-
-            <!-- Page Content -->
-            <div class="content-wrapper">
-                <!-- Home Section -->
-                <section id="home" class="section">
-                    <div class="section-header">
-                        <h2><i class="fas fa-star"></i> Welcome to Bahir Dar Student Support</h2>
-                        <div class="section-divider"></div>
-                    </div>
-                    <div class="welcome-content">
-                        <div class="welcome-text">
-                            <p>Bahir Dar Student Support provides comprehensive academic assistance for all core subjects: <strong>English, Math, Biology, Chemistry, and Physics</strong>. We are dedicated to helping students from Grade 1 to 12 achieve academic excellence through innovative learning methods.</p>
-                            <div class="features-grid">
-                                <div class="feature">
-                                    <i class="fas fa-book"></i>
-                                    <h4>Guided Short Notes</h4>
-                                    <p>Concise, curriculum-aligned study materials</p>
-                                </div>
-                                <div class="feature">
-                                    <i class="fas fa-robot"></i>
-                                    <h4>AI-Based Quizzes</h4>
-                                    <p>Personalized quizzes with adaptive difficulty</p>
-                                </div>
-                                <div class="feature">
-                                    <i class="fas fa-user-tie"></i>
-                                    <h4>Expert Tutoring</h4>
-                                    <p>One-on-one sessions with qualified instructors</p>
-                                </div>
-                                <div class="feature">
-                                    <i class="fas fa-chart-bar"></i>
-                                    <h4>Progress Tracking</h4>
-                                    <p>Detailed analytics on student performance</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="welcome-image">
-                            <div class="image-placeholder">
-                                <i class="fas fa-graduation-cap"></i>
-                                <p>Empowering Students for Success</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- About Section -->
-                <section id="about" class="section">
-                    <div class="section-header">
-                        <h2><i class="fas fa-info-circle"></i> About Us</h2>
-                        <div class="section-divider"></div>
-                    </div>
-                    <div class="about-content">
-                        <div class="about-text">
-                            <p>We are a team of dedicated teachers and mentors committed to helping students excel academically. Our mission is to provide accessible, high-quality educational support to students in Bahir Dar and surrounding areas.</p>
-                            <div class="mission-vision">
-                                <div class="mission">
-                                    <h4><i class="fas fa-bullseye"></i> Our Mission</h4>
-                                    <p>To empower students with the knowledge, skills, and confidence needed to achieve their academic goals through personalized support and innovative teaching methods.</p>
-                                </div>
-                                <div class="vision">
-                                    <h4><i class="fas fa-eye"></i> Our Vision</h4>
-                                    <p>To become the leading student support center in Ethiopia, recognized for excellence in education and student success.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Grades Section -->
-                <section id="grades" class="section">
-                    <div class="section-header">
-                        <h2><i class="fas fa-book"></i> Grades & Subjects</h2>
-                        <div class="section-divider"></div>
-                    </div>
-                    <p class="section-intro">Select a grade to view subjects, study materials, and quizzes:</p>
-                    
-                    <div class="grades-navigation">
-                        <div class="grade-filter">
-                            <button class="filter-btn active" data-filter="all">All Grades</button>
-                            <button class="filter-btn" data-filter="primary">Primary (1-8)</button>
-                            <button class="filter-btn" data-filter="secondary">Secondary (9-12)</button>
-                        </div>
-                        
-                        <div class="grades-grid">
-                            <!-- Grade cards will be generated dynamically -->
-                        </div>
-                    </div>
-                    
-                    <!-- Grade Details (Dynamically shown when grade is selected) -->
-                    <div id="grade-details" class="grade-details">
-                        <div class="details-header">
-                            <h3 id="selected-grade-title">Select a Grade</h3>
-                            <button id="close-details" class="close-details"><i class="fas fa-times"></i></button>
-                        </div>
-                        <div class="details-content">
-                            <p id="grade-description">Click on any grade above to view available subjects and learning materials.</p>
-                            <div class="subjects-list" id="subjects-list">
-                                <!-- Subjects will be dynamically populated -->
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Instructors Section -->
-                <section id="instructors" class="section">
-                    <div class="section-header">
-                        <h2><i class="fas fa-chalkboard-teacher"></i> Our Instructors</h2>
-                        <div class="section-divider"></div>
-                    </div>
-                    <p class="section-intro">Meet our team of dedicated and experienced instructors:</p>
-                    
-                    <div class="instructors-grid">
-                        <div class="instructor-card">
-                            <div class="instructor-avatar">
-                                <i class="fas fa-user-tie"></i>
-                            </div>
-                            <h4>Mr. Abebe T.</h4>
-                            <p class="instructor-subject">English Instructor</p>
-                            <p class="instructor-qualification">MA in English Literature, 10+ years experience</p>
-                            <div class="instructor-contact">
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        
-                        <div class="instructor-card">
-                            <div class="instructor-avatar">
-                                <i class="fas fa-user-tie"></i>
-                            </div>
-                            <h4>Ms. Saba K.</h4>
-                            <p class="instructor-subject">Mathematics Instructor</p>
-                            <p class="instructor-qualification">MSc in Mathematics, 8+ years experience</p>
-                            <div class="instructor-contact">
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        
-                        <div class="instructor-card">
-                            <div class="instructor-avatar">
-                                <i class="fas fa-user-tie"></i>
-                            </div>
-                            <h4>Dr. Alemu G.</h4>
-                            <p class="instructor-subject">Biology Instructor</p>
-                            <p class="instructor-qualification">PhD in Biology, 12+ years experience</p>
-                            <div class="instructor-contact">
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        
-                        <div class="instructor-card">
-                            <div class="instructor-avatar">
-                                <i class="fas fa-user-tie"></i>
-                            </div>
-                            <h4>Mr. Tesfaye D.</h4>
-                            <p class="instructor-subject">Chemistry Instructor</p>
-                            <p class="instructor-qualification">MSc in Chemistry, 9+ years experience</p>
-                            <div class="instructor-contact">
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        
-                        <div class="instructor-card">
-                            <div class="instructor-avatar">
-                                <i class="fas fa-user-tie"></i>
-                            </div>
-                            <h4>Dr. Hana M.</h4>
-                            <p class="instructor-subject">Physics Instructor</p>
-                            <p class="instructor-qualification">PhD in Physics, 15+ years experience</p>
-                            <div class="instructor-contact">
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Student Progress Section -->
-                <section id="progress" class="section">
-                    <div class="section-header">
-                        <h2><i class="fas fa-chart-line"></i> Student Progress</h2>
-                        <div class="section-divider"></div>
-                    </div>
-                    <p class="section-intro">Average scores and progress tracking across all grades:</p>
-                    
-                    <div class="progress-container">
-                        <div class="progress-chart">
-                            <canvas id="progressChart"></canvas>
-                        </div>
-                        
-                        <div class="progress-summary">
-                            <h4><i class="fas fa-trophy"></i> Overall Performance</h4>
-                            <div class="summary-stats">
-                                <div class="stat">
-                                    <h5>Average Score</h5>
-                                    <p class="stat-value">86.4%</p>
-                                </div>
-                                <div class="stat">
-                                    <h5>Improvement Rate</h5>
-                                    <p class="stat-value">12.3%</p>
-                                </div>
-                                <div class="stat">
-                                    <h5>Completion Rate</h5>
-                                    <p class="stat-value">94.7%</p>
-                                </div>
-                            </div>
-                            
-                            <div class="progress-list">
-                                <h5><i class="fas fa-list"></i> Grade-wise Average Scores</h5>
-                                <ul id="grade-progress-list">
-                                    <!-- Will be populated by JavaScript -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Student List Section -->
-                <section id="students" class="section">
-                    <div class="section-header">
-                        <h2><i class="fas fa-users"></i> Student List</h2>
-                        <div class="section-divider"></div>
-                    </div>
-                    <p class="section-intro">Our current student roster (sample data):</p>
-                    
-                    <div class="table-container">
-                        <table class="student-table">
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Grade</th>
-                                    <th>Phone</th>
-                                    <th>Progress</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody id="student-table-body">
-                                <!-- Will be populated by JavaScript -->
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                    <div class="table-actions">
-                        <button class="btn btn-secondary" id="load-more-students">
-                            <i class="fas fa-plus"></i> Load More Students
-                        </button>
-                        <div class="student-count">
-                            <p>Showing <span id="shown-count">10</span> of <span id="total-count">500+</span> students</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Contact Section -->
-                <section id="contact" class="section">
-                    <div class="section-header">
-                        <h2><i class="fas fa-envelope"></i> Contact Us</h2>
-                        <div class="section-divider"></div>
-                    </div>
-                    
-                    <div class="contact-container">
-                        <div class="contact-info">
-                            <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
-                            <p>Bahir Dar, Ethiopia</p>
-                            
-                            <h4><i class="fas fa-envelope"></i> Email</h4>
-                            <p>bahirdar.studentsupport@gmail.com</p>
-                            
-                            <h4><i class="fas fa-phone"></i> Phone</h4>
-                            <p>+251 9XX XXX XXX</p>
-                            
-                            <h4><i class="fas fa-clock"></i> Office Hours</h4>
-                            <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-                            <p>Saturday: 9:00 AM - 2:00 PM</p>
-                        </div>
-                        
-                        <div class="contact-form">
-                            <h4>Send us a Message</h4>
-                            <form id="contact-form">
-                                <div class="form-group">
-                                    <input type="text" placeholder="Your Name" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" placeholder="Your Email" required>
-                                </div>
-                                <div class="form-group">
-                                    <select required>
-                                        <option value="" disabled selected>Select Grade</option>
-                                        <option value="grade1">Grade 1</option>
-                                        <option value="grade2">Grade 2</option>
-                                        <option value="grade3">Grade 3</option>
-                                        <option value="grade4">Grade 4</option>
-                                        <option value="grade5">Grade 5</option>
-                                        <option value="grade6">Grade 6</option>
-                                        <option value="grade7">Grade 7</option>
-                                        <option value="grade8">Grade 8</option>
-                                        <option value="grade9">Grade 9</option>
-                                        <option value="grade10">Grade 10</option>
-                                        <option value="grade11">Grade 11</option>
-                                        <option value="grade12">Grade 12</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fas fa-paper-plane"></i> Send Message
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Footer -->
-                <footer class="main-footer">
-                    <div class="footer-content">
-                        <div class="footer-logo">
-                            <h3><i class="fas fa-graduation-cap"></i> Bahir Dar Student Support</h3>
-                            <p>Empowering students for academic excellence since 2020</p>
-                        </div>
-                        
-                        <div class="footer-links">
-                            <h4>Quick Links</h4>
-                            <ul>
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#grades">Grades</a></li>
-                                <li><a href="#instructors">Instructors</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="footer-social">
-                            <h4>Follow Us</h4>
-                            <div class="social-icons">
-                                <a href="#"><i class="fab fa-facebook"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-telegram"></i></a>
-                                <a href="#"><i class="fab fa-youtube"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="footer-bottom">
-                        <p>© 2026 Bahir Dar Student Support. All Rights Reserved.</p>
-                        <p>Designed with <i class="fas fa-heart"></i> for Ethiopian students</p>
-                    </div>
-                </footer>
             </div>
-        </main>
-    </div>
+        </section>
 
-    <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <!-- Teachers Section -->
+        <section id="teachers" class="section teachers-section">
+            <div class="container">
+                <h2 class="section-title">መምህራናችን</h2>
+                <div class="teachers-grid" id="teachersContainer">
+                    <!-- Teachers will be loaded by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="section courses-section">
+            <div class="container">
+                <h2 class="section-title">የምንደግፋቸው ኮርሶች</h2>
+                <div class="courses-content">
+                    <div class="course-category">
+                        <h3>መሰረታዊ ኮርሶች</h3>
+                        <div class="course-list">
+                            <span class="course-tag">ሒሳብ</span>
+                            <span class="course-tag">እንግሊዝኛ</span>
+                            <span class="course-tag">ፊዚክስ</span>
+                            <span class="course-tag">ኬሚስትሪ</span>
+                            <span class="course-tag">ባዮሎጂ</span>
+                        </div>
+                    </div>
+                    <div class="course-category">
+                        <h3>የኮምፒዩተር ፕሮግራሚንግ</h3>
+                        <div class="course-list">
+                            <span class="course-tag">C++</span>
+                            <span class="course-tag">Java</span>
+                            <span class="course-tag">ዌብ ልማት</span>
+                        </div>
+                    </div>
+                    <div class="course-category">
+                        <h3>ዌብ ልማት ቴክኖሎጂዎች</h3>
+                        <div class="course-list">
+                            <span class="course-tag">HTML, CSS, JavaScript</span>
+                            <span class="course-tag">React</span>
+                            <span class="course-tag">Node.js</span>
+                            <span class="course-tag">Express</span>
+                            <span class="course-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student Management Section -->
+        <section id="students" class="section students-section">
+            <div class="container">
+                <h2 class="section-title">ተማሪ ማስተዳደሪያ</h2>
+                <div class="student-management">
+                    <div class="student-form-container">
+                        <h3>አዲስ ተማሪ ያስመዝግቡ</h3>
+                        <form id="studentForm">
+                            <div class="form-group">
+                                <label for="studentName">የተማሪ ስም</label>
+                                <input type="text" id="studentName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="studentGrade">የትምህርት ደረጃ (1-12)</label>
+                                <select id="studentGrade" required>
+                                    <option value="">ደረጃ ይምረጡ</option>
+                                    <option value="1">1ኛ ክፍል</option>
+                                    <option value="2">2ኛ ክፍል</option>
+                                    <option value="3">3ኛ ክፍል</option>
+                                    <option value="4">4ኛ ክፍል</option>
+                                    <option value="5">5ኛ ክፍል</option>
+                                    <option value="6">6ኛ ክፍል</option>
+                                    <option value="7">7ኛ ክፍል</option>
+                                    <option value="8">8ኛ ክፍል</option>
+                                    <option value="9">9ኛ ክፍል</option>
+                                    <option value="10">10ኛ ክፍል</option>
+                                    <option value="11">11ኛ ክፍል</option>
+                                    <option value="12">12ኛ ክፍል</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="coursesTaken">የተወሰዱ ኮርሶች</label>
+                                <input type="text" id="coursesTaken" placeholder="ሒሳብ, እንግሊዝኛ, ፊዚክስ" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="strongSubject">ጠንካራ የሆነ አይነት ትምህርት</label>
+                                <input type="text" id="strongSubject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="weakSubject">ደካማ የሆነ አይነት ትምህርት</label>
+                                <input type="text" id="weakSubject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="progressFrom">የሂደት (ከ)</label>
+                                <input type="number" id="progressFrom" min="0" max="100" placeholder="0" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="progressTo">የሂደት (ወደ)</label>
+                                <input type="number" id="progressTo" min="0" max="100" placeholder="100" required>
+                            </div>
+                            <button type="submit" class="btn primary-btn">ተማሪ አስገባ</button>
+                        </form>
+                    </div>
+                    <div class="student-list-container">
+                        <h3>የተመዘገቡ ተማሪዎች</h3>
+                        <div class="student-list" id="studentList">
+                            <!-- Student list will be loaded from localStorage -->
+                        </div>
+                        <div class="student-actions">
+                            <button class="btn secondary-btn" id="clearStudents">ሁሉንም ተማሪዎች አጥፋ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Materials Section -->
+        <section id="materials" class="section materials-section">
+            <div class="container">
+                <h2 class="section-title">የትምህርት ቁሳቁሶች</h2>
+                <div class="materials-tabs">
+                    <button class="tab-btn active" data-tab="primary">መሰረታዊ ትምህርት</button>
+                    <button class="tab-btn" data-tab="secondary">ሁለተኛ ደረጃ ትምህርት</button>
+                    <button class="tab-btn" data-tab="guide-books">መምህር መመሪያ መጻሕፍት</button>
+                    <button class="tab-btn" data-tab="exams">ፈተናዎች</button>
+                </div>
+                
+                <div class="tab-content active" id="primary-content">
+                    <h3>መሰረታዊ ትምህርት ቁሳቁሶች (1-8 ክፍል)</h3>
+                    <div class="materials-grid">
+                        <div class="material-card">
+                            <h4>መማሪያ መጻሕፍት</h4>
+                            <p>ለመሰረታዊ ትምህርት የሚሆኑ መማሪያ መጻሕፍት</p>
+                            <a href="https://fetena.net/books" target="_blank" class="material-link">
+                                መጻሕፍትን ይመልከቱ <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="material-card">
+                            <h4>እስከማር ሙከራዎች</h4>
+                            <p>ለመለማመድ የሚሆኑ እስከማር ሙከራዎች</p>
+                            <a href="https://www.easemate.ai/quiz-generator" target="_blank" class="material-link">
+                                እስከማር ሙከራ ይፍጠሩ <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="secondary-content">
+                    <h3>ሁለተኛ ደረጃ ትምህርት ቁሳቁሶች (9-12 ክፍል)</h3>
+                    <div class="materials-grid">
+                        <div class="material-card">
+                            <h4>መማሪያ መጻሕፍት</h4>
+                            <p>ለሁለተኛ ደረጃ ትምህርት የሚሆኑ መማሪያ መጻሕፍት</p>
+                            <a href="https://fetena.net/books" target="_blank" class="material-link">
+                                መጻሕፍትን ይመልከቱ <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="material-card">
+                            <h4>እስከማር ሙከራዎች</h4>
+                            <p>ለሁለተኛ ደረጃ ተማሪዎች የሚሆኑ እስከማር ሙከራዎች</p>
+                            <a href="https://questionx.app/quiz-generator" target="_blank" class="material-link">
+                                እስከማር ሙከራ ይፍጠሩ <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="guide-books-content">
+                    <h3>መምህር መመሪያ መጻሕፍት</h3>
+                    <div class="materials-grid">
+                        <div class="material-card">
+                            <h4>መሰረታዊ ትምህርት መመሪያዎች</h4>
+                            <p>ለ1-8 ክፍል መምህራን የሚሆኑ መመሪያ መጻሕፍት</p>
+                            <a href="https://www.neaea.com/teachers-guide-book/" target="_blank" class="material-link">
+                                መመሪያ መጻሕፍትን ይመልከቱ <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="material-card">
+                            <h4>ሁለተኛ ደረጃ ትምህርት መመሪያዎች</h4>
+                            <p>ለ9-12 ክፍል መምህራን የሚሆኑ መመሪያ መጻሕፍት</p>
+                            <a href="https://www.neaea.com/teachers-guide-book/" target="_blank" class="material-link">
+                                መመሪያ መጻሕፍትን ይመልከቱ <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="exams-content">
+                    <h3>ፈተናዎች</h3>
+                    <div class="materials-grid">
+                        <div class="material-card">
+                            <h4>መሰረታዊ ትምህርት ፈተናዎች</h4>
+                            <p>ለ1-8 ክፍል ተማሪዎች የሚሆኑ ፈተናዎች</p>
+                            <a href="https://www.proprofs.com/quiz-school/topic/school-and-k-12-exams" target="_blank" class="material-link">
+                                ፈተናዎችን ይፈትኑ <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="material-card">
+                            <h4>ሁለተኛ ደረጃ ትምህርት ፈተናዎች</h4>
+                            <p>ለ9-12 ክፍል ተማሪዎች የሚሆኑ ፈተናዎች</p>
+                            <a href="https://fetena.net/exam/ministry" target="_blank" class="material-link">
+                                የሚኒስቴር ፈተናዎች <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>ባሕርዳር የተማሪዎች ድጋፍ አገልግሎት</h3>
+                    <p>ከ1ኛ ክፍል እስከ 12ኛ ክፍል ድረስ የትምህርት ድጋፍ</p>
+                </div>
+                <div class="footer-links">
+                    <h4>ፈጣን አገናኞች</h4>
+                    <ul>
+                        <li><a href="#home">መግቢያ</a></li>
+                        <li><a href="#about">ስለ እኛ</a></li>
+                        <li><a href="#teachers">መምህራን</a></li>
+                        <li><a href="#materials">የትምህርት ቁሳቁሶች</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 ባሕርዳር የተማሪዎች ድጋፍ አገልግሎት. ሁሉም መብቶች የተጠበቁ ናቸው.</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
